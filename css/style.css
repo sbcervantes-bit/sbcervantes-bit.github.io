@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #405890, #010b1e);
+    font-family: 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+header {
+  width: 100%;
+  height: 130px;
+  position: relative;
+  overflow: hidden;
+}
+
+header img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  text-align: center;
+  white-space: nowrap;
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    text-align: center;
+}
+
+nav ul {
+    display: inline-flex;
+    border-radius: 10px;
+    gap: min(30px, 2.5vw);
+    list-style: none;
+    margin: 10px;
+    padding: 12px 20px;
+    overflow: hidden;
+    background-color: #ffffff;
+    white-space: nowrap;
+    max-width: 90vw;
+    box-sizing: border-box;
+}
+
+nav ul a {
+    font-size: min(2.3rem, 5vw);
+}
+
+a, a:link, a:visited {
+    font-weight: bold;
+    font-size: min(2rem, 3vw);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #00f7ff;
+}
+
+section {
+    display: flex;
+    width: 60%;
+    margin: 20px auto;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 15px;
+    background-color: #7f93c066;
+    font-family: Arial, sans-serif;
+    padding: 15px 20px;
+}
+
+section h2 {
+    margin: 0;
+    font-size: 2.7rem;
+    text-align: center;
+}
+
+section p {
+    margin: 0;
+    font-size: 1.7rem;
+    text-align: justify;
+}
+
+.gallery-box {
+    display: flex;
+    flex-wrap: nowrap;                
+    justify-content: flex-start;
+    gap: 20px;
+    margin: 0 30px 50px 0;
+
+    overflow-x: auto;
+}
+
+.gallery-box::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-box img {
+    width: auto;
+    height: min(300px, 30vw);
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.gallery-box figure {
+    width:min-content
+}
+
+.gallery-box figure figcaption {
+    font-size: min(1rem, 3vw);
+}
+figure {
+    margin: 0;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  margin-top: auto;
+  overflow: hidden;
+}
+
+footer img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+footer p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-size: min(2.3rem, 5vw);
+  text-align: center;
+  white-space: nowrap;  
+}

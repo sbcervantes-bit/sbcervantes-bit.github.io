@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Via Cervantes | Portfolio</title>
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+        <style>
+            header h1 a, header h1 a:link, header h1 a:visited {
+                font-weight: bold;
+                font-size: min(4.8rem, 10vw);
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+            }
+            
+            .about-container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 50;
+                width: 80%;
+                max-width: 1000px;
+                margin: 30px auto;
+            }
+            
+            .about-container #about {
+                margin: 50px;
+                width: auto;
+                flex: 1 1 300px;
+                max-width: 550px;
+            }
+
+            #pfp {
+                flex-shrink: 0;
+                text-align: center;                
+            }
+            
+            #pfp img {
+                display: block;
+                width: min(300px, 60vw);
+                height: auto;
+                object-fit: cover;
+                border-radius: 15px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <header>
+            <img src="img/shooting-star.gif" alt="Portfolio Logo" width="100%">
+            <h1><a href="index.html">MY PORTFOLIO</a></h1>
+        </header>
+
+        <nav>
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="projects.html">Projects</a>
+                <a href="coursework.html">Web Design Coursework</a>
+                <a href="contact.html">Contact</a>
+            </ul>
+        </nav>
+
+        <main class="about-container">
+            <div id="pfp">
+                <img src="img/hi-its-me.jpg" alt="Profile Picture">
+            </div>
+            
+            <section id="about">
+                <h2>About Me</h2>
+                <p style="text-indent: 2em;">My name is Via Cervantes and welcome to my humble abode. 
+                I am a sophomore at FEU Tech, currently taking up Bachelor of Multimedia Arts (BMMA) and Animation.
+                I have a passion for animation and illustration, and am learning new ways to improve my skills and discover new techniques.                </p>
+                <p style="text-indent: 2em;">Here in my portfolio, you will find some of my works and projects, 
+                and additionally also feature some of the course activities I've taken for my Web Design course.</p>
+            </section>            
+        </main>
+
+         <footer>
+            <img src="img/shooting-star.gif" alt="Portfolio Logo" width="100%">
+            <p>thank you for visiting! :></p>
+        </footer>
+    </body>
+</html>
